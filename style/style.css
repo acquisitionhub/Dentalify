@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 :root{
     --background-color: #333647;
-    --pink-color: #f87652;
+    --blue-color: #4070F4;
     --secondary-color: #bbbbbb;
 }
 *{
@@ -69,8 +69,8 @@ canvas.particles-js-canvas-el{
     border-radius: 10px;
     font-size: 19px;
     color: white;
-    background-color:var(--pink-color);
-    border: 3px solid var(--pink-color);
+    background-color:var(--blue-color);
+    border: 3px solid var(--blue-color);
     width: 113px;
     font-family: 'Poppins', sans-serif;
     margin-top: 10px;
@@ -148,6 +148,7 @@ canvas.particles-js-canvas-el{
         margin-top: 20px;
     }
 }
+
 
 
 
