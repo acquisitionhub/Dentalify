@@ -192,6 +192,41 @@
     Your browser does not support HTML5 video.
   </video>
 </div>
+                     <script>
+document.addEventListener("DOMContentLoaded", function() {
+  const modal = document.getElementById("videoModal");
+  const video = document.getElementById("revenueVideo");
+  const closeBtn = document.querySelector("#videoModal .closeBtn");
+
+  // trigger element
+  document.querySelectorAll("h1, h2, .page-link, a").forEach(el => {
+    if (el.textContent.trim().includes("Revenue clarity explained")) {
+      el.style.cursor = "pointer";
+      el.addEventListener("click", function(e) {
+        e.preventDefault();
+        modal.style.display = "flex";
+        video.play();
+      });
+    }
+  });
+
+  // close
+  closeBtn.onclick = function() {
+    modal.style.display = "none";
+    video.pause();
+    video.currentTime = 0;
+  };
+
+  // click outside video closes
+  modal.onclick = function(e) {
+    if (e.target === modal) {
+      modal.style.display = "none";
+      video.pause();
+      video.currentTime = 0;
+    }
+  };
+});
+</script>
     
     </body>
 </html>
