@@ -161,6 +161,19 @@ canvas.particles-js-canvas-el{
     border-radius: 102px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
+.btn_container {
+    text-align: center;   /* optional - centers button */
+    margin-top: 40px;
+}
+
+.btn {
+    padding: 18px 40px;      /* 👈 increases size */
+    font-size: 18px;         /* 👈 bigger text */
+    font-weight: 600;
+    border-radius: 8px;      /* smoother look */
+    cursor: pointer;
+}
+
 
 
 
