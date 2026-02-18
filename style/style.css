@@ -173,3 +173,10 @@ canvas.particles-js-canvas-el{
     border-radius: 8px;      /* smoother look */
     cursor: pointer;
 }
+/* Hero section alignment */
+.hero_section {
+    display: flex;
+    align-items: center;      /* vertically center */
+    min-height: 80vh;         /* makes section tall enough */
+}
+
