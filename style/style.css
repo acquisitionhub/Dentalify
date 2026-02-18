@@ -40,7 +40,7 @@ canvas.particles-js-canvas-el{
     margin-bottom: 15px;
 
 }
-/*.hero_section .row h3::after{
+.hero_section .row h3::after{
     content: '';
     position: absolute;
     text-align: center;
@@ -48,7 +48,7 @@ canvas.particles-js-canvas-el{
     width: 90px;
     height: 2px;
     background-color: white;
-    margin-left: 6px;*/
+    margin-left: 6px;
 }
 .hero_section .row h1{
     font-size: 65px;
@@ -173,6 +173,7 @@ canvas.particles-js-canvas-el{
     border-radius: 8px;      /* smoother look */
     cursor: pointer;
 }
+
 
 
 
