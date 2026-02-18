@@ -255,6 +255,16 @@ canvas.particles-js-canvas-el{
         font-size: 16px;
     }
 }
+.btn_container .btn {
+    padding: 20px 50px;       /* more vertical and horizontal space */
+    font-size: 20px;           /* bigger text */
+    border-radius: 10px;       /* rounded corners */
+    min-width: 300px;          /* optional: ensure button width */
+    max-width: 100%;           /* responsive on mobile */
+    white-space: normal;       /* allow text to wrap if needed */
+    text-align: center;
+}
+
 
 
 
