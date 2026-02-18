@@ -134,8 +134,8 @@ canvas.particles-js-canvas-el{
         text-align: center;
         margin-bottom: 0px;
     }
-    .hero_section .row h3::after{
-        width: 0px;
+    /*.hero_section .row h3::after{
+        width: 0px;*/
     }
     .hero_section .btn_container button{
         width: 100px;
@@ -161,6 +161,7 @@ canvas.particles-js-canvas-el{
     border-radius: 102px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
+
 
 
 
