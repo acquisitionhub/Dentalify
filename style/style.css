@@ -179,4 +179,19 @@ canvas.particles-js-canvas-el{
     align-items: center;      /* vertically center */
     min-height: 80vh;         /* makes section tall enough */
 }
+.hero_content {
+    display: flex;
+    align-items: center;
+}
+
+.hero_text {
+    text-align: left;         /* or center if you want horizontal centering */
+    padding: 20px;
+}
+
+
+
+
+
+
 
