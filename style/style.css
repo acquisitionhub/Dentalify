@@ -161,6 +161,13 @@ canvas.particles-js-canvas-el{
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
+.content-image img {
+    width: 100%;
+    height: 450px;        /* 👈 increase this number to make taller */
+    object-fit: cover;    /* prevents stretching */
+    border-radius: 12px;  /* optional – cleaner look */
+}
+
 
 
 
