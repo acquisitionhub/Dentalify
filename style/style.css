@@ -148,6 +148,20 @@ canvas.particles-js-canvas-el{
         margin-top: 20px;
     }
 }
+/* Contact Image Banner */
+.contact-image-section {
+    text-align: center;
+    padding: 40px 0;
+    background: #f9f9f9; /* optional background color */
+}
+
+.contact-image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
 
 
 
