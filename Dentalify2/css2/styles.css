@@ -1,0 +1,364 @@
+/* ==============================
+   GLOBAL STYLES
+================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: radial-gradient(circle at 20% 20%, #7c3aed 0%, #4c1d95 40%, #1e1b4b 80%);
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+section {
+  width: 100%;
+}
+
+h1, h2, h3 {
+  letter-spacing: -0.5px;
+}
+
+/* ==============================
+   NAVBAR
+================================= */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 60px;
+  position: relative;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgba(255,255,255,0.85);
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+.join-btn {
+  background: #ffffff;
+  color: #4c1d95;
+  padding: 10px 22px;
+  border-radius: 999px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.join-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* ==============================
+   HAMBURGER
+================================= */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 26px;
+  height: 3px;
+  background: #ffffff;
+  border-radius: 3px;
+  transition: 0.3s ease;
+}
+
+/* ==============================
+   HERO SECTION
+================================= */
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 60px;
+  min-height: 90vh;
+}
+
+.hero-left h1 {
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 1.1;
+  max-width: 680px;
+}
+
+.hero-left span {
+  background: linear-gradient(135deg, #c084fc, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-buttons {
+  margin-top: 35px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 14px 28px;
+  border-radius: 999px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 15px;
+  transition: 0.3s ease;
+}
+
+.primary-btn {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #ffffff;
+}
+
+.primary-btn:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+.secondary-btn {
+  background: linear-gradient(135deg, #a855f7, #7c3aed);
+  color: #ffffff;
+}
+
+.secondary-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(124,58,237,0.5);
+}
+
+/* ==============================
+   ORBIT VISUAL
+================================= */
+
+.hero-right {
+  position: relative;
+  width: 420px;
+  height: 420px;
+}
+
+.orbit {
+  position: absolute;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.orbit1 {
+  width: 420px;
+  height: 420px;
+  animation: rotate 40s linear infinite;
+}
+
+.orbit2 {
+  width: 300px;
+  height: 300px;
+  animation: rotate 30s linear infinite reverse;
+}
+
+.orbit3 {
+  width: 180px;
+  height: 180px;
+}
+
+.center-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(25px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 60px rgba(168,85,247,0.6);
+}
+
+.avatar {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #c084fc, #7c3aed);
+  box-shadow: 0 0 25px rgba(168,85,247,0.9);
+}
+
+.a1 { top: 0; left: 50%; transform: translateX(-50%); }
+.a2 { bottom: 40px; left: 40px; }
+.a3 { top: 100px; right: 0; }
+.a4 { bottom: 100px; right: 40px; }
+
+@keyframes rotate {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* ==============================
+   BRANDS
+================================= */
+
+.brands {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+  padding: 60px;
+  text-align: center;
+  opacity: 0.85;
+}
+
+.brands div {
+  background: rgba(255,255,255,0.05);
+  padding: 16px;
+  border-radius: 14px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* ==============================
+   FEATURES & PRICING
+================================= */
+
+.features {
+  padding: 120px 60px;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 42px;
+  margin-bottom: 60px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.feature-card {
+  padding: 45px;
+  border-radius: 24px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(25px);
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: 0.4s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+}
+
+/* ==============================
+   CTA
+================================= */
+
+.cta {
+  padding: 120px 60px;
+  text-align: center;
+  background: linear-gradient(135deg, #6d28d9, #4c1d95);
+}
+
+.cta h2 {
+  font-size: 38px;
+  margin-bottom: 30px;
+}
+
+/* ==============================
+   FOOTER
+================================= */
+
+footer {
+  text-align: center;
+  padding: 30px;
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+/* ==============================
+   SCROLL ANIMATIONS
+================================= */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease;
+}
+
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ==============================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-right {
+    margin-top: 60px;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background: #1e1b4b;
+    flex-direction: column;
+    width: 220px;
+    padding: 30px;
+    border-radius: 14px;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
